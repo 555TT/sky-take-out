@@ -6,6 +6,8 @@ import com.sky.dto.EmployeePageQueryDTO;
 import com.sky.entity.Employee;
 import com.sky.result.PageResult;
 
+import java.awt.*;
+
 public interface EmployeeService {
 
     /**
@@ -28,4 +30,10 @@ public interface EmployeeService {
      * @return
      */
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /**
+     * 启用禁用员工账号
+     * @param status
+     */
+    void startOrStop(Integer status,Long id);
 }
