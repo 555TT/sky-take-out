@@ -17,25 +17,57 @@ import java.util.List;
 @AllArgsConstructor
 public class DishVO implements Serializable {
 
+    /**
+     * 主键ID
+     */
     private Long id;
-    //菜品名称
+
+    /**
+     * 菜品名称
+     */
     private String name;
-    //菜品分类id
+
+    /**
+     * 菜品分类ID
+     */
     private Long categoryId;
-    //菜品价格
+
+    /**
+     * 菜品价格
+     */
     private BigDecimal price;
-    //图片
+
+    /**
+     * 图片路径或URL
+     */
     private String image;
-    //描述信息
+
+    /**
+     * 描述信息
+     */
     private String description;
-    //0 停售 1 起售
+
+    /**
+     * 菜品状态<br>
+     * 0: 停售<br>
+     * 1: 起售
+     */
     private Integer status;
-    //更新时间
+
+    /**
+     * 更新时间
+     */
     private LocalDateTime updateTime;
-    //分类名称
+
+    /**
+     * 分类名称
+     */
     private String categoryName;
-    //菜品关联的口味
+
+    /**
+     * 菜品关联的口味
+     */
     private List<DishFlavor> flavors = new ArrayList<>();
 
-    //private Integer copies;
+
 }

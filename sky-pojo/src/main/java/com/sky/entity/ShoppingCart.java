@@ -20,31 +20,54 @@ public class ShoppingCart implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 主键ID
+     */
     private Long id;
 
-    //名称
+    /**
+     * 名称
+     */
     private String name;
 
-    //用户id
+    /**
+     * 用户ID
+     */
     private Long userId;
 
-    //菜品id
+    /**
+     * 菜品ID
+     */
     private Long dishId;
 
-    //套餐id
+    /**
+     * 套餐ID
+     */
     private Long setmealId;
 
-    //口味
+    /**
+     * 口味
+     */
     private String dishFlavor;
 
-    //数量
+    /**
+     * 数量
+     */
     private Integer number;
 
-    //金额
+    /**
+     * 金额
+     */
     private BigDecimal amount;
 
-    //图片
+    /**
+     * 图片路径或URL
+     */
     private String image;
 
+    /**
+     * 创建时间
+     */
     private LocalDateTime createTime;
+
 }
